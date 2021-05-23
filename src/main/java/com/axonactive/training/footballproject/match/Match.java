@@ -18,14 +18,5 @@ public class Match {
 
     private Team teamB;
 
-    public void createMatch(Team teamOne, Team teamTwo) {
-
-        if (teamA.getName().equals(teamB.getName())) {
-            this.setTeamA(teamOne);
-            this.setTeamB(teamTwo);
-        } else
-            throw new IllegalArgumentException("Team A must different with TeamB");
-    }
-
 }
 

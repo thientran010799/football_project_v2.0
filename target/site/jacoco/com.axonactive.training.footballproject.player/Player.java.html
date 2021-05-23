@@ -8,20 +8,20 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-<span class="nc" id="L11">@NoArgsConstructor</span>
-<span class="nc" id="L12">@AllArgsConstructor</span>
+@NoArgsConstructor
+@AllArgsConstructor
 @Getter
-<span class="nc" id="L14">@Setter</span>
+@Setter
 public class Player {
 
-<span class="nc" id="L17">    private String name;</span>
+    private String name;
 
-<span class="nc" id="L19">    private Gender gender;</span>
+    private Gender gender;
 
-<span class="nc" id="L21">    private String socialInsuranceNumber;</span>
+    private String socialInsuranceNumber;
 
     public boolean isWorkForCompany() {
-<span class="nc" id="L24">        return (Team.COMPANY_SOCIAL_INSURANCE_NUMBER.equals(this.socialInsuranceNumber));</span>
+<span class="fc" id="L24">        return (Team.COMPANY_SOCIAL_INSURANCE_NUMBER.equals(this.socialInsuranceNumber));</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

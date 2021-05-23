@@ -4,23 +4,21 @@ import java.util.ArrayList;
 import java.util.List;
 
 import lombok.Getter;
-import lombok.Setter;
 
 @Getter
-<span class="nc" id="L10">@Setter</span>
-<span class="nc" id="L11">public class TeamService {</span>
+<span class="fc" id="L9">public class TeamService {</span>
 
-<span class="nc" id="L13">    private List&lt;Team&gt; teams = new ArrayList&lt;&gt;();</span>
+<span class="fc" id="L11">    private List&lt;Team&gt; teams = new ArrayList&lt;&gt;();</span>
 
     public void register(Team team) {
-<span class="nc bnc" id="L16" title="All 2 branches missed.">        if (team.isEnoughPlayer()) {</span>
-<span class="nc" id="L17">            teams.add(team);</span>
-        }
-<span class="nc" id="L19">        else throw new IllegalArgumentException(&quot;Your team is not enough player&quot;);</span>
-<span class="nc" id="L20">    }</span>
+<span class="fc bfc" id="L14" title="All 2 branches covered.">        if (team.isEnoughPlayer()) {</span>
+<span class="fc" id="L15">            teams.add(team);</span>
+        } else
+<span class="fc" id="L17">            throw new IllegalArgumentException(&quot;Your team is not enough player&quot;);</span>
+<span class="fc" id="L18">    }</span>
 
-    public List&lt;Team&gt; getAllTeam(){
-<span class="nc" id="L23">        return this.teams;</span>
+    public List&lt;Team&gt; getAllTeam() {
+<span class="fc" id="L21">        return this.teams;</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

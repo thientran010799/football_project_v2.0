@@ -11,11 +11,11 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
-<span class="nc" id="L14">@NoArgsConstructor</span>
-<span class="nc" id="L15">@AllArgsConstructor</span>
+@NoArgsConstructor
+@AllArgsConstructor
 @Getter
-<span class="nc" id="L17">@Setter</span>
-<span class="nc" id="L18">@ToString</span>
+@Setter
+@ToString
 public class Team {
 
     public static final String COMPANY_SOCIAL_INSURANCE_NUMBER = &quot;&quot;;
@@ -24,26 +24,25 @@ public class Team {
 
     public static final int MINIMUN_SIZE = 7;
 
-<span class="nc" id="L27">    private String name;</span>
+    private String name;
 
-<span class="nc" id="L29">    private int score;</span>
+    private int score;
 
-<span class="nc" id="L31">    private List&lt;Player&gt; players = new ArrayList&lt;&gt;();</span>
+    private List&lt;Player&gt; players = new ArrayList&lt;&gt;();
 
     public boolean isEnoughPlayer() {
-<span class="nc bnc" id="L34" title="All 2 branches missed.">        return (this.getPlayers().size() &lt; MINIMUN_SIZE);</span>
+<span class="fc bfc" id="L34" title="All 2 branches covered.">        return (this.players.size() &gt; MINIMUN_SIZE);</span>
     }
 
     public void addPlayer(Player player) {
-<span class="nc bnc" id="L38" title="All 2 branches missed.">        if (players.size() &lt; Team.MAXIMUN_SIZE) {</span>
-<span class="nc bnc" id="L39" title="All 2 branches missed.">            if (player.isWorkForCompany()) {</span>
-<span class="nc" id="L40">                players.add(player);</span>
+<span class="fc bfc" id="L38" title="All 2 branches covered.">        if (players.size() &lt; Team.MAXIMUN_SIZE) {</span>
+<span class="fc bfc" id="L39" title="All 2 branches covered.">            if (player.isWorkForCompany()) {</span>
+<span class="fc" id="L40">                players.add(player);</span>
             } else
-<span class="nc" id="L42">                throw new IllegalArgumentException(&quot;This player do not work for this company&quot;);</span>
+<span class="fc" id="L42">                throw new IllegalArgumentException(&quot;This player do not work for this company&quot;);</span>
         } else
-<span class="nc" id="L44">            throw new IllegalArgumentException(&quot;Size of team is max&quot;);</span>
-<span class="nc" id="L45">    }</span>
-
+<span class="fc" id="L44">            throw new IllegalArgumentException(&quot;Size of team is max&quot;);</span>
+<span class="fc" id="L45">    }</span>
 }
 
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

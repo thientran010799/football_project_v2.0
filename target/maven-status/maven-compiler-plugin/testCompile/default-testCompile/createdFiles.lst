@@ -1,1 +1,5 @@
+com\axonactive\training\footballproject\team\TeamTest.class
+com\axonactive\training\footballproject\match\MatchServiceTest.class
+com\axonactive\training\footballproject\player\GenderTest.class
 com\axonactive\training\footballproject\player\PlayerTest.class
+com\axonactive\training\footballproject\team\TeamServiceTest.class

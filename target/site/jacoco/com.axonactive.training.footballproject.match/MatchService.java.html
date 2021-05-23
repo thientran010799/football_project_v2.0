@@ -5,18 +5,21 @@ import java.util.List;
 
 import com.axonactive.training.footballproject.team.Team;
 
-<span class="nc" id="L8">public class MatchService {</span>
-<span class="nc" id="L9">    private List&lt;Match&gt; matches = new ArrayList&lt;&gt;();</span>
+import lombok.Getter;
+@Getter
+<span class="fc" id="L10">public class MatchService {</span>
+<span class="fc" id="L11">    private List&lt;Match&gt; matches = new ArrayList&lt;&gt;();</span>
 
     public void createMatches(List&lt;Team&gt; teams) {
-<span class="nc bnc" id="L12" title="All 2 branches missed.">        for (int i = 0; i &lt; (teams.size() - 1); i++) {</span>
-<span class="nc bnc" id="L13" title="All 2 branches missed.">            for (int j = i + 1; j &lt; teams.size(); j++) {</span>
-<span class="nc" id="L14">                Match match = new Match();</span>
-<span class="nc" id="L15">                match.createMatch(teams.get(i), teams.get(j));</span>
-<span class="nc" id="L16">                matches.add(match);</span>
+<span class="fc bfc" id="L14" title="All 2 branches covered.">        for (int i = 0; i &lt; (teams.size() - 1); i++) {</span>
+<span class="fc bfc" id="L15" title="All 2 branches covered.">            for (int j = i + 1; j &lt; teams.size(); j++) {</span>
+<span class="fc" id="L16">                Match match = new Match();</span>
+<span class="fc" id="L17">                match.setTeamA(teams.get(i));</span>
+<span class="fc" id="L18">                match.setTeamA(teams.get(j));</span>
+<span class="fc" id="L19">                matches.add(match);</span>
             }
         }
-<span class="nc" id="L19">    }</span>
+<span class="fc" id="L22">    }</span>
 
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

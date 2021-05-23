@@ -31,7 +31,7 @@ public class Team {
     private List<Player> players = new ArrayList<>();
 
     public boolean isEnoughPlayer() {
-        return (this.getPlayers().size() < MINIMUN_SIZE);
+        return (this.players.size() > MINIMUN_SIZE);
     }
 
     public void addPlayer(Player player) {
@@ -43,6 +43,5 @@ public class Team {
         } else
             throw new IllegalArgumentException("Size of team is max");
     }
-
 }
 

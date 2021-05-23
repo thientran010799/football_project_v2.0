@@ -4,3 +4,4 @@ footballtournament,com.axonactive.training.footballproject.player,Gender,0,48,0,
 footballtournament,com.axonactive.training.footballproject.team,TeamService,0,26,0,2,0,7,0,4,0,3
 footballtournament,com.axonactive.training.footballproject.team,Team,0,34,0,6,0,7,0,5,0,2
 footballtournament,com.axonactive.training.footballproject.match,MatchService,0,50,0,4,0,9,0,4,0,2
+footballtournament,com.axonactive.training.footballproject.Result,ResultService,133,0,6,0,17,0,6,0,3,0

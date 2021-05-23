@@ -1,0 +1,6 @@
+com\axonactive\training\footballproject\team\Team.class
+com\axonactive\training\footballproject\match\MatchService.class
+com\axonactive\training\footballproject\player\Gender.class
+com\axonactive\training\footballproject\team\TeamService.class
+com\axonactive\training\footballproject\match\Match.class
+com\axonactive\training\footballproject\player\Player.class
